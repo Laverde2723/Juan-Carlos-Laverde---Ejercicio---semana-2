@@ -43,6 +43,39 @@ main .perfil img{
 
 }
 
+img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img{
+    margin-top: 5px;
+}
+
+@media (max-width: 800) {
+    .column{
+        flex: 50%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 600) {
+    .column{
+        flex: 100%;
+        padding: 5px;
+    }
+}
+
 /* Texto */
 
 main .texto{
@@ -97,11 +130,13 @@ main .texto p{
     color: rgb(217, 193, 191);
     margin-bottom: 25px;
     font-size: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .pie-pagina .grupo-1 .box p{
     color: #efefef;
     margin-bottom: 10px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .pie-pagina .grupo-1 .red-social a{
@@ -127,8 +162,10 @@ main .texto p{
     padding: 15px 10px;
     text-align: center;
     color: rgb(217, 193, 191);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
+
